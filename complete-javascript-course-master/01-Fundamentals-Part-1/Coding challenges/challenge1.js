@@ -13,4 +13,4 @@ console.log(`John's BMI: ${johnBMI}`);
 
 // 3) Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John
 const markHigherBMI = markBMI > johnBMI;
-console.log(`Does Mark have a higher BMI than John? ${markHigherBMI}`);
+console.log(markHigherBMI);
