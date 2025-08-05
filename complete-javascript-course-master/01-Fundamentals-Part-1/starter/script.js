@@ -23,6 +23,43 @@ const jonasNew = `I'm ${firstName2}, a ${year - birthYear} years old ${job}!`;
 //Without template literals
 console.log('String with \n\ multiple \n\ lines');
 //With template literals
-console.log(`String with 
+console.log(`String with
 multiple
-lines`); */
+lines`); 
+
+ IF / ELSE STATEMENTS
+const age = 15;
+const isOldEnough = age >= 18;
+if (isOldEnough) {
+    console.log("Sarah can start driving license 🚗")
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+}
+
+// TYPE CONVERSION AND COERCION
+const birthYear = 1991;
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);*/
+
+//CHALLENGE 1
+// 1) Store Mark's and John's mass and height in variables
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+
+// 2) Calculate both their BMIs using the formula: BMI = mass / height ** 2
+const markBMI = markMass / (markHeight ** 2);
+const johnBMI = johnMass / (johnHeight ** 2);
+console.log(`Mark's BMI: ${markBMI}`);
+console.log(`John's BMI: ${johnBMI}`);
+
+// 3) Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John
+const markHigherBMI = markBMI > johnBMI;
+console.log(markHigherBMI);
