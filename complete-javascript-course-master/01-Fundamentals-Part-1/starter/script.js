@@ -45,7 +45,7 @@ if (birthYear <= 2000) {
 } else {
     century = 21;
 }
-console.log(century);*/
+console.log(century);
 
 //CHALLENGE 1
 // 1) Store Mark's and John's mass and height in variables
@@ -62,4 +62,29 @@ console.log(`John's BMI: ${johnBMI}`);
 
 // 3) Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John
 const markHigherBMI = markBMI > johnBMI;
-console.log(markHigherBMI);
+console.log(markHigherBMI);*/
+
+//CHALLENGE 2
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+
+const markBMI = markMass / (markHeight ** 2);
+const johnBMI = johnMass / (johnHeight ** 2);
+//console.log(`Mark's BMI: ${markBMI}`);
+//console.log(`John's BMI: ${johnBMI}`);
+
+/*1) Create an if/else statement to determine who has the higher BMI and log the message to the console
+if (markBMI > johnBMI) {
+    console.log("Mark's BMI is higher than John's!")
+} else {
+    console.log("John's BMI is higher than Mark's!")
+}*/
+
+//2 
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`)
+} else {
+    console.log(`John's ${johnBMI} BMI is higher than Mark's ${markBMI}!`)
+}
